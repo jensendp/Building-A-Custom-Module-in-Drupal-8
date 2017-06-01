@@ -1,0 +1,5 @@
+name: My Calculator
+type: module
+description: 'A Simple Drupal 8 Calculator'
+package: Custom
+core: 8.x

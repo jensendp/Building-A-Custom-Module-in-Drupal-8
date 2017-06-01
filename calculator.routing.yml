@@ -1,0 +1,35 @@
+calculator:
+  path: 'my/calculator'
+  defaults:
+    _form: '\Drupal\calculator\Form\CalculatorForm'
+    _title: 'My Calculator'
+  requirements:
+    _permission: 'access content'
+
+calculator_add:
+  path: 'my/calculator/add/{first_digit}/{second_digit}'
+  defaults:
+    _controller: '\Drupal\calculator\Controller\CalculatorController::add'
+  requirements:
+    _permission: 'access content'
+
+calculator_subtract:
+  path: 'my/calculator/subtract/{first_digit}/{second_digit}'
+  defaults:
+    _controller: '\Drupal\calculator\Controller\CalculatorController::subtract'
+  requirements:
+    _permission: 'access content'
+
+calculator_multiply:
+  path: 'my/calculator/multipy/{first_digit}/{second_digit}'
+  defaults:
+    _controller: '\Drupal\calculator\Controller\CalculatorController::multiply'
+  requirements:
+    _permission: 'access content'
+
+calculator_divide:
+  path: 'my/calculator/divide/{first_digit}/{second_digit}'
+  defaults:
+    _controller: '\Drupal\calculator\Controller\CalculatorController::divide'
+  requirements:
+    _permission: 'access content'
